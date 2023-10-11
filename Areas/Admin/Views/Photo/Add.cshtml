@@ -1,0 +1,44 @@
+﻿@model Clothing_boutique_web.Areas.Admin.Models.Photo;
+@{
+    ViewData["Title"] = "Add";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="box box-primary">
+    <div class="box-header with-border">
+        <h3 class="box-title">Add new Photo</h3>
+    </div><!-- /.box-header -->
+    <!-- form start -->
+    <form role="form" method="post" asp-area="admin" asp-controller="photo" asp-action="add" enctype="multipart/form-data">
+        <div class="box-body">
+        <div class="form-group">
+            <label asp-for="ImageFile"></label>
+            <input type="file" asp-for="ImageFile" accept="image/*">
+        </div>
+        <div class="form-group">
+            @*<div class="has-error">@ViewBag.ErrorCate</div>*@
+            <label>Product</label>
+            <select asp-for="ProductId" class="form-control" asp-items="ViewBag.ProductId">
+              <option>Select product</option>
+              <span asp-validation-for="ProductId" class="text-danger" />
+            </select>
+        </div>
+        <div class="checkbox">
+            <label asp-for="Featured">
+            <input asp-for="Featured" type="checkbox" value="true"> Featured
+            </label>
+        </div>
+        <div class="checkbox">
+            <label asp-for="Status">
+            <input asp-for="Status" type="checkbox" value="true"> Status
+            </label>
+        </div>
+        </div><!-- /.box-body -->
+
+        <div class="box-footer">
+        <button type="submit" class="btn btn-primary">Add</button>
+        <button  class="btn btn-danger"><a style="color:aliceblue" asp-area="admin" asp-action="index" asp-controller="photo">Back to list</a></button>
+        </div>
+    </form>
+</div>
+

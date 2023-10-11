@@ -1,0 +1,63 @@
+﻿@model PaginatedList<Photo>;
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+@{
+    int count = Model.PagingInfo.CurrentPage == 1? Model.PagingInfo.CurrentPage : (Model.PagingInfo.CurrentPage - 1 )*5 + 1;
+}
+
+<div class="box">
+    <div class="box-header">
+        <h3 class="box-title">List Photos</h3>
+    </div><!-- /.box-header -->
+    <div class="box-body">
+        <div id="example2_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
+            <div class="row"><div class="col-sm-6"><button ><a asp-area="admin" asp-controller="photo" asp-action="add" >Add New Photo</a></button></div><div class="col-sm-6"></div></div><div class="row">
+
+                <div class="col-sm-12">
+                    <table id="example2" class="table table-bordered table-hover dataTable" role="grid" aria-describedby="example2_info">
+                        <thead>
+                          <tr role="row">
+                            <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Rendering engine: activate to sort column ascending">STT</th>
+                            <th class="sorting_desc" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" aria-sort="descending">Photo</th>
+                            <th class="sorting_desc" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" aria-sort="descending">Product</th>
+                            <th class="sorting_desc" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" aria-sort="descending">Status</th>
+                            <th class="sorting_desc" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" aria-sort="descending">Featured</th>
+                            <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending">Action(s)</th>
+                          </tr>
+                        </thead>
+                        <tbody id="pageTbody">
+                            @foreach (var photo in Model.ListItems)
+                            {
+                                <tr role="row" class="odd">
+                                    <td class="">@(count++)</td>
+                                    <td class="">
+                                        <img decoding="async" src="@("~/admin/image/"+ photo.Name)" asp-append-version="true" width="270px" height="270px"/>
+                                    </td>
+                                    <td class="">@photo.Product.Name</td>
+                                    <td class="">@(photo.Status == true? "Available":"Unavailable")</td>
+                                    <td class="">@(photo.Featured == true? "Using":"")</td>
+                                    <td>
+                                        <button class="btn btn-info"><a asp-area="admin" asp-controller="photo" asp-action="edit" asp-route-Id="@photo.Id">Edit</a></button>
+                                        <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete product : @photo.Name')">
+                                            <a asp-area="admin" asp-controller="photo" asp-action="delete" asp-route-Id="@photo.Id">Delete</a>
+                                        </button>
+                                    </td>
+                               </tr>  
+                            }                         
+                        </tbody>
+                        <tfoot>
+                            <tr >
+                                <td colspan="3"><div class="pagingDiv" page-model="@Model.PagingInfo" page-action="Index" page-classes-enabled="true" page-class="paging" page-class-selected="active"></div></td>
+                            </tr>
+                
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+ 
+        </div>
+    </div><!-- /.box-body -->
+</div>

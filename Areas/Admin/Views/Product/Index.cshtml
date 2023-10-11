@@ -1,0 +1,76 @@
+﻿
+@model PaginatedList<Product>;
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+@{
+    int count = 1;
+    if(Model.PagingInfo != null)
+    {
+       count = Model.PagingInfo.CurrentPage == 1? Model.PagingInfo.CurrentPage : (Model.PagingInfo.CurrentPage - 1 )*5 + 1; 
+    }
+}
+
+<div class="box">
+    <div class="box-header">
+        <h3 class="box-title">List Products</h3>
+    </div><!-- /.box-header -->
+    <div class="box-body">
+        <div id="example2_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
+            <div class="row"><div class="col-sm-6"><button ><a asp-area="admin" asp-controller="product" asp-action="add" >Add New Product</a></button></div><div class="col-sm-6"></div></div><div class="row">
+
+                <div class="col-sm-12">
+                    <table id="example2" class="table table-bordered table-hover dataTable" role="grid" aria-describedby="example2_info">
+                        <thead>
+                          <tr role="row">
+                            <th>STT</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Detail</th>
+                            <th>Price</th>
+                            <th>Category</th>
+                            <th>Quaity</th>
+                            <th>Status</th>
+                            <th>Action(s)</th>
+                          </tr>
+                        </thead>
+                        <tbody id="pageTbody">
+                            @if(Model.ListItems.Count() != 0)
+                            {
+                                @foreach (var product in Model.ListItems)
+                                {
+                                    <tr role="row" class="odd">
+                                        <td class="">@(count++)</td>
+                                        <td class="">@product.Name</td>
+                                        <td class="">@product.Description</td>
+                                        <td class="">@product.Detail</td>
+                                        <td class="">@product.Price</td>
+                                        <td class="">@product.Categories.Name</td>
+                                        <td class="">@product.Quaity (Kg)</td>
+                                        <td class="">@(product.Featured == true ? "Available":"Unavailble")</td>
+                                        <td>
+                                            <button class="btn btn-info"><a asp-area="admin" asp-controller="product" asp-action="edit" asp-route-id="@product.Id">Edit</a></button>
+                                            <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete product : @product.Name')">
+                                                <a asp-area="admin" asp-controller="product" asp-action="delete" asp-route-Id="@product.Id">Delete</a>
+                                            </button>
+                                            <button class="btn btn-info"><a asp-area="admin" asp-controller="photo" asp-action="add" asp-route-id="@product.Id">Add photo</a></button>
+                                        </td>
+                                   </tr>  
+                                }     
+                            }
+                        </tbody>
+                        <tfoot>
+                            <tr >
+                                <td colspan="3"><div class="pagingDiv" page-model="@Model.PagingInfo" page-action="Index" page-classes-enabled="true" page-class="paging" page-class-selected="active"></div></td>
+                            </tr>
+                
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+ 
+        </div>
+    </div><!-- /.box-body -->
+</div>
