@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Clothing_boutique_web.Models;
+using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 using System.Data.Entity.Core;
 
 namespace Clothing_boutique_web.Areas.Pagination

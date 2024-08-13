@@ -3,6 +3,11 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Http;
 using System.Text.Json.Serialization;
+using Microsoft.AspNetCore.Identity;
+using System.Data.Entity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.Extensions.FileSystemGlobbing.Internal;
+using Microsoft.AspNetCore.Builder;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation()
@@ -17,7 +22,8 @@ builder.Services.AddSession(
         cfg.Cookie.Name = "chicuong";  
         cfg.IdleTimeout = new TimeSpan(0, 60, 0);
         cfg.IOTimeout = new TimeSpan(0, 60, 0);
-    });               
+    });
+
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(option =>
      {
@@ -26,7 +32,6 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
          option.AccessDeniedPath = "/admin/login/accessdenied";
          option.ExpireTimeSpan = new TimeSpan(0, 60, 0);
      });
-
 
 var app = builder.Build();
 
@@ -42,7 +47,6 @@ if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
 }
-
 app.MapDefaultControllerRoute();
 
 await app.RunAsync();

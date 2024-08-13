@@ -24,7 +24,5 @@ namespace Clothing_boutique_web.Areas.Admin.Models
 
         public virtual Category Categories { get; set; }
         public virtual ICollection<Photo> Photos { get; set; }
-
-
     }
 }

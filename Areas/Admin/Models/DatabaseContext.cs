@@ -1,5 +1,7 @@
 ﻿using System;
 using Clothing_boutique_web.Areas.Admin.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
@@ -7,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace Clothing_boutique_web.Models
 {
-    public partial class DatabaseContext : DbContext
+    public partial class DatabaseContext: DbContext
     {
        
         public DatabaseContext()
@@ -78,35 +80,6 @@ namespace Clothing_boutique_web.Models
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_RoleAccount_Role");
             });
-
-            //modelBuilder.Entity<Product>(entity =>
-            //{
-            //    entity.ToTable("Product");
-
-            //    entity.Property(e => e.Name)
-            //        .HasMaxLength(250)
-            //        .IsUnicode(false);
-
-            //    entity.Property(e => e.Description).HasMaxLength(500);
-
-            //    entity.Property(e => e.Detail)
-            //        .HasMaxLength(1000)
-            //        .IsUnicode(false);
-            //    entity.HasOne(d => d.Categories)
-            //        .WithMany(p => p.Products)
-            //        .HasForeignKey(d => d.CategoryId)
-            //        .OnDelete(DeleteBehavior.ClientSetNull)
-            //        .HasConstraintName("FK_Product_Category");
-            //});
-
-            //modelBuilder.Entity<Category>(entity =>
-            //{
-            //    entity.ToTable("Category");
-
-            //    entity.Property(e => e.Name)
-            //        .HasMaxLength(250)
-            //        .IsUnicode(false);
-            //});
         }
 
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);

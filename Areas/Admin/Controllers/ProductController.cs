@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 
 namespace Clothing_boutique_web.Areas.Admin.Controllers
 {
@@ -16,13 +17,15 @@ namespace Clothing_boutique_web.Areas.Admin.Controllers
         public ProductController(DatabaseContext _context)
         {
             context = _context;
+            
         }
+
         [Route("")]
         [Route("index")]
         public async Task<IActionResult> Index(int? id)
         {
             int currentPage = id == null ? 1 : id.Value;
-            int itemPerPg = 5;
+            int itemPerPg = 5;  
             List<Product> productList = context.Products.ToList();
             return View(await Models.PaginatedList<Product>.CreateDummyData(currentPage, productList, itemPerPg));
         }
@@ -40,7 +43,6 @@ namespace Clothing_boutique_web.Areas.Admin.Controllers
         [Route("add")]
         public async Task<IActionResult> Add(Product product)
         {
-
             if (product != null)
             {
                   
@@ -52,19 +54,26 @@ namespace Clothing_boutique_web.Areas.Admin.Controllers
                         return View(product);
                     }
 
-                    // if the Quaity is 0
+                    // if the Quality is 0
                     else if (product.Quaity == 0)
                     {
-                        ModelState.AddModelError("Quatity", "Quatity of product don't allow equal 0  !");
+                        ModelState.AddModelError("Quality", "Quality of product don't allow equal 0  !");
+                        PopulateCategoryDropDownList();
+                        return View(product);
+                    }
+                    // if the Quality is 0
+                    else if (product.Price == 0 || product.Price < 0)
+                    {
+                        ModelState.AddModelError("Price", "Price of product don't allow equal 0 or less than 0  !");
                         PopulateCategoryDropDownList();
                         return View(product);
                     }
                     else
-                    {
-                        product.DateofInsert = DateTime.Now;
-                        context.Products.Add(product);
-                        await context.SaveChangesAsync();
-                    }
+                        {
+                            product.DateofInsert = DateTime.Now;
+                            context.Products.Add(product);
+                            await context.SaveChangesAsync();
+                        }
 
             }
             return RedirectToAction("index","product", new {Areas = "admin"});
@@ -118,6 +127,5 @@ namespace Clothing_boutique_web.Areas.Admin.Controllers
                                    select d;
             ViewBag.CategoryId = new SelectList(categoryQuery.AsNoTracking(), "Id", "Name", selectedCategory);
         }
-
     }
 }

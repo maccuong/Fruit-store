@@ -1,8 +1,8 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Identity;
+using System;
 using System.Collections.Generic;
 
 #nullable disable
-
 namespace Clothing_boutique_web.Models
 {
     public partial class Account

@@ -4,6 +4,7 @@ using Clothing_boutique_web.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 
 
 namespace Clothing_boutique_web.Areas.Admin.Controllers
@@ -41,12 +42,17 @@ namespace Clothing_boutique_web.Areas.Admin.Controllers
         [Route("add")]
         public async Task<IActionResult> Add(Category category)
         {
-            if (ModelState.IsValid)
+            if (category.Name != null)
             {
                 context.Categories.Add(category);
                 await context.SaveChangesAsync();
+                return RedirectToAction("index", "categories", new { Areas = "Admin" });
             }
-            return RedirectToAction("index", "categories", new { Areas = "Admin" });
+            else
+            {
+                ViewBag.Error = "Please input Category's name";
+                return View(category);
+            }
         }
 
         [HttpGet]

@@ -53,14 +53,14 @@ namespace Clothing_boutique_web.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<bool?>("Featured")
+                    b.Property<bool>("Featured")
                         .HasColumnType("bit");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("ProductId")
+                    b.Property<int>("ProductId")
                         .HasColumnType("int");
 
                     b.Property<bool>("Status")
@@ -196,8 +196,10 @@ namespace Clothing_boutique_web.Migrations
             modelBuilder.Entity("Clothing_boutique_web.Areas.Admin.Models.Photo", b =>
                 {
                     b.HasOne("Clothing_boutique_web.Areas.Admin.Models.Product", "Product")
-                        .WithMany()
-                        .HasForeignKey("ProductId");
+                        .WithMany("Photos")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Product");
                 });
@@ -235,6 +237,11 @@ namespace Clothing_boutique_web.Migrations
             modelBuilder.Entity("Clothing_boutique_web.Areas.Admin.Models.Category", b =>
                 {
                     b.Navigation("Products");
+                });
+
+            modelBuilder.Entity("Clothing_boutique_web.Areas.Admin.Models.Product", b =>
+                {
+                    b.Navigation("Photos");
                 });
 
             modelBuilder.Entity("Clothing_boutique_web.Models.Account", b =>

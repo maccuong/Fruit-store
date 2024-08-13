@@ -14,7 +14,7 @@
         <div class="form-group">
             <label asp-for="Name">Name</label>
             <input type="text" asp-for="Name" class="form-control">
-            <span asp-validation-for="Name" class="text-danger"></span>
+            <p class="text-danger">@ViewBag.Error</p>
         </div>
         <div class="checkbox">
             <label asp-for="Status">

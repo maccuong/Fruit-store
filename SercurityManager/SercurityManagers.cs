@@ -15,7 +15,6 @@ namespace Clothing_boutique_web.SercurityManager
         }
 
         //method is used get claim's user
-
         private IEnumerable<Claim> GetUserClaim(Account account)
         {
             List<Claim> claims = new List<Claim>();

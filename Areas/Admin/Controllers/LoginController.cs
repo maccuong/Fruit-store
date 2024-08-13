@@ -1,5 +1,8 @@
 ﻿using Clothing_boutique_web.Models;
 using Clothing_boutique_web.SercurityManager;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System.Data.Entity;
@@ -14,12 +17,10 @@ namespace Clothing_boutique_web.Areas.Admin.Controllers
     {
         private DatabaseContext context = new DatabaseContext();
         private SercurityManagers sercurityManager = new SercurityManagers();
-        private readonly IHttpContextAccessor _httpContextAccessor;
 
-        public LoginController(DatabaseContext _context, IHttpContextAccessor httpContextAccessor)
+        public LoginController(DatabaseContext _context)
         {
             context = _context;
-            _httpContextAccessor = httpContextAccessor;
         }
 
         [Route("")]
@@ -34,7 +35,7 @@ namespace Clothing_boutique_web.Areas.Admin.Controllers
         public IActionResult Process(string userName, string password)
         {
             var account = ProcessLogin(userName, password);
-            if(account != null)
+            if (account != null)
             {
                 sercurityManager.SignIn(this.HttpContext, account);
                 SetCurrentUser(this.HttpContext, account);
@@ -50,14 +51,13 @@ namespace Clothing_boutique_web.Areas.Admin.Controllers
         private Account ProcessLogin(string userName, string password)
         {
             var account = context.Accounts.SingleOrDefault(a => a.UserName.Equals(userName) && a.Status == true);
-            
-            if(account != null)
+
+            if (account != null)
             {
                 var roleOfAccount = account.RoleAccounts.FirstOrDefault();
                 if (roleOfAccount.RoleId == 1 && roleOfAccount.Status == true && BCrypt.Net.BCrypt.Verify(password, account.Password)) 
                     return account;
             }
-
             return null;
         }
 
@@ -99,6 +99,7 @@ namespace Clothing_boutique_web.Areas.Admin.Controllers
             }
             return View("profile", accUpd);
         }
+
         private void SetCurrentUser(HttpContext Context, Account account)
         {
             var session = Context.Session;
@@ -154,7 +155,6 @@ namespace Clothing_boutique_web.Areas.Admin.Controllers
                 user = account;
             }
             return user;
-
         }
     }
 }

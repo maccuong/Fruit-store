@@ -15,6 +15,6 @@ Add the following code to the Configure method in your Application's Startup cla
 Scaffold-DbContext "Server=.;Database=Clothing_boutique_web;user id=sa;password=sa2012;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Context DatabaseContext -f
 dotnet ef dbcontext scaffold "Server=MACTHIENCHICUON;Database=Clothing_boutique_web;user id=sa;password=sa2012;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Context DatabaseContext -f
 
---Code first
+--Code First
 B1: dotnet ef migrations add AddCategoryProduct
 B2: dotnet ef database update

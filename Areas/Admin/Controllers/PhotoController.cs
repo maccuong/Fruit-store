@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 
 namespace Clothing_boutique_web.Areas.Admin.Controllers
 {
@@ -27,6 +28,7 @@ namespace Clothing_boutique_web.Areas.Admin.Controllers
         [Route("index")]
         public async Task<IActionResult> Index(int? id)
         {
+            Account account = new Account();
             int currentPage = id == null ? 1 : id.Value;
             int itemPerPg = 5;
             List<Photo> photoList = context.Photos.ToList();
@@ -61,7 +63,7 @@ namespace Clothing_boutique_web.Areas.Admin.Controllers
         {
             if(photo.Id != 0)
                photo.Id = 0;
-            if (!String.IsNullOrEmpty(photo.ImageFile.FileName))
+            if (photo.ImageFile != null)
             {
                 string wwwRootPath = hostEnvironment.WebRootPath;
                 string fileName = Path.GetFileNameWithoutExtension(wwwRootPath);
@@ -72,10 +74,18 @@ namespace Clothing_boutique_web.Areas.Admin.Controllers
                 {
                     await photo.ImageFile.CopyToAsync(fileStream);
                 }
+
                 context.Photos.Add(photo);
+                UpdateStatusImage(photo.ProductId, false);
+                await context.SaveChangesAsync();
+                return RedirectToAction("index", "photo", new { Areas = "admin" });
             }
-            await context.SaveChangesAsync();
-            return RedirectToAction("index", "photo", new {Areas = "admin"});
+            else
+            {
+                ViewBag.Error = "Please Input image!!!";
+                PopulateProductDropDownList(photo.ProductId);
+                return View(photo);
+            }
         }
 
         [HttpGet]
@@ -133,6 +143,14 @@ namespace Clothing_boutique_web.Areas.Admin.Controllers
                                 orderby d.Name
                                 select d;
             ViewBag.ProductId = new SelectList(productQuery.AsNoTracking(), "Id", "Name", selectedProduct);
+        }
+        private void UpdateStatusImage(int productID,bool status)
+        {
+            IEnumerable<Photo> photos = context.Photos.Where(p => p.ProductId == productID);
+            foreach (Photo photo in photos)
+            {
+               photo.Featured = status;
+            }
         }
     }
 }
