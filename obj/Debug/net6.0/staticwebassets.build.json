@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "k7Zg7Fxg5bctGKgK0Y4n20qgZ/Txtxg9AWxVh7da/Vg=",
+  "Hash": "JtnQIDo19eiMOp8zoP+r7QHWKYhIwg+O+oeQ7STdio0=",
   "Source": "PageLinkTagHelper",
   "BasePath": "_content/PageLinkTagHelper",
   "Mode": "Default",
@@ -51771,6 +51771,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\admin\\plugins\\timepicker\\bootstrap-timepicker.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Documents\\myproject\\mynewproject\\EntityFramework_RAZORPAGE\\maccuong\\Fruit-store\\Clothing_boutique_web\\wwwroot\\avatar\\hinh1.jpg",
+      "SourceId": "PageLinkTagHelper",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Documents\\myproject\\mynewproject\\EntityFramework_RAZORPAGE\\maccuong\\Fruit-store\\Clothing_boutique_web\\wwwroot\\",
+      "BasePath": "_content/PageLinkTagHelper",
+      "RelativePath": "avatar/hinh1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\avatar\\hinh1.jpg"
     },
     {
       "Identity": "C:\\Users\\Admin\\Documents\\myproject\\mynewproject\\EntityFramework_RAZORPAGE\\maccuong\\Fruit-store\\Clothing_boutique_web\\wwwroot\\css\\bootstrap.min.css",

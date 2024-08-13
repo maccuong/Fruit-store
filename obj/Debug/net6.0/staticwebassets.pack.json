@@ -10897,6 +10897,10 @@
       "PackagePath": "staticwebassets\\admin\\plugins\\timepicker\\bootstrap-timepicker.min.js"
     },
     {
+      "Id": "C:\\Users\\Admin\\Documents\\myproject\\mynewproject\\EntityFramework_RAZORPAGE\\maccuong\\Fruit-store\\Clothing_boutique_web\\wwwroot\\avatar\\hinh1.jpg",
+      "PackagePath": "staticwebassets\\avatar\\hinh1.jpg"
+    },
+    {
       "Id": "C:\\Users\\Admin\\Documents\\myproject\\mynewproject\\EntityFramework_RAZORPAGE\\maccuong\\Fruit-store\\Clothing_boutique_web\\wwwroot\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
     },
