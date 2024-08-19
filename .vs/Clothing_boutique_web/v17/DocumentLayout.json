@@ -3,36 +3,76 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Documents\\myproject\\mynewproject\\EntityFramework_RAZORPAGE\\maccuong\\Fruit-store\\Clothing_boutique_web\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BAE36A09-8E1C-47F2-A8B9-B802597CDA37}|Clothing_boutique_web.csproj|c:\\users\\admin\\documents\\myproject\\mynewproject\\entityframework_razorpage\\maccuong\\fruit-store\\clothing_boutique_web\\areas\\admin\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BAE36A09-8E1C-47F2-A8B9-B802597CDA37}|Clothing_boutique_web.csproj|solutionrelative:areas\\admin\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{BAE36A09-8E1C-47F2-A8B9-B802597CDA37}|Clothing_boutique_web.csproj|c:\\users\\admin\\documents\\myproject\\mynewproject\\entityframework_razorpage\\maccuong\\fruit-store\\clothing_boutique_web\\areas\\admin\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BAE36A09-8E1C-47F2-A8B9-B802597CDA37}|Clothing_boutique_web.csproj|solutionrelative:areas\\admin\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BAE36A09-8E1C-47F2-A8B9-B802597CDA37}|Clothing_boutique_web.csproj|c:\\users\\admin\\documents\\myproject\\mynewproject\\entityframework_razorpage\\maccuong\\fruit-store\\clothing_boutique_web\\areas\\admin\\views\\photo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BAE36A09-8E1C-47F2-A8B9-B802597CDA37}|Clothing_boutique_web.csproj|solutionrelative:areas\\admin\\views\\photo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{BAE36A09-8E1C-47F2-A8B9-B802597CDA37}|Clothing_boutique_web.csproj|c:\\users\\admin\\documents\\myproject\\mynewproject\\entityframework_razorpage\\maccuong\\fruit-store\\clothing_boutique_web\\areas\\admin\\views\\account\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BAE36A09-8E1C-47F2-A8B9-B802597CDA37}|Clothing_boutique_web.csproj|solutionrelative:areas\\admin\\views\\account\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BAE36A09-8E1C-47F2-A8B9-B802597CDA37}|Clothing_boutique_web.csproj|c:\\users\\admin\\documents\\myproject\\mynewproject\\entityframework_razorpage\\maccuong\\fruit-store\\clothing_boutique_web\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAE36A09-8E1C-47F2-A8B9-B802597CDA37}|Clothing_boutique_web.csproj|solutionrelative:areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAE36A09-8E1C-47F2-A8B9-B802597CDA37}|Clothing_boutique_web.csproj|c:\\users\\admin\\documents\\myproject\\mynewproject\\entityframework_razorpage\\maccuong\\fruit-store\\clothing_boutique_web\\areas\\admin\\views\\product\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BAE36A09-8E1C-47F2-A8B9-B802597CDA37}|Clothing_boutique_web.csproj|solutionrelative:areas\\admin\\views\\product\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAE36A09-8E1C-47F2-A8B9-B802597CDA37}|Clothing_boutique_web.csproj|c:\\users\\admin\\documents\\myproject\\mynewproject\\entityframework_razorpage\\maccuong\\fruit-store\\clothing_boutique_web\\areas\\admin\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAE36A09-8E1C-47F2-A8B9-B802597CDA37}|Clothing_boutique_web.csproj|solutionrelative:areas\\admin\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BAE36A09-8E1C-47F2-A8B9-B802597CDA37}|Clothing_boutique_web.csproj|c:\\users\\admin\\documents\\myproject\\mynewproject\\entityframework_razorpage\\maccuong\\fruit-store\\clothing_boutique_web\\areas\\admin\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAE36A09-8E1C-47F2-A8B9-B802597CDA37}|Clothing_boutique_web.csproj|solutionrelative:areas\\admin\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BAE36A09-8E1C-47F2-A8B9-B802597CDA37}|Clothing_boutique_web.csproj|c:\\users\\admin\\documents\\myproject\\mynewproject\\entityframework_razorpage\\maccuong\\fruit-store\\clothing_boutique_web\\areas\\admin\\controllers\\photocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BAE36A09-8E1C-47F2-A8B9-B802597CDA37}|Clothing_boutique_web.csproj|solutionrelative:areas\\admin\\controllers\\photocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BAE36A09-8E1C-47F2-A8B9-B802597CDA37}|Clothing_boutique_web.csproj|c:\\users\\admin\\documents\\myproject\\mynewproject\\entityframework_razorpage\\maccuong\\fruit-store\\clothing_boutique_web\\areas\\admin\\models\\photo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAE36A09-8E1C-47F2-A8B9-B802597CDA37}|Clothing_boutique_web.csproj|solutionrelative:areas\\admin\\models\\photo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BAE36A09-8E1C-47F2-A8B9-B802597CDA37}|Clothing_boutique_web.csproj|c:\\users\\admin\\documents\\myproject\\mynewproject\\entityframework_razorpage\\maccuong\\fruit-store\\clothing_boutique_web\\areas\\admin\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAE36A09-8E1C-47F2-A8B9-B802597CDA37}|Clothing_boutique_web.csproj|solutionrelative:areas\\admin\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAE36A09-8E1C-47F2-A8B9-B802597CDA37}|Clothing_boutique_web.csproj|c:\\users\\admin\\documents\\myproject\\mynewproject\\entityframework_razorpage\\maccuong\\fruit-store\\clothing_boutique_web\\areas\\admin\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BAE36A09-8E1C-47F2-A8B9-B802597CDA37}|Clothing_boutique_web.csproj|solutionrelative:areas\\admin\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAE36A09-8E1C-47F2-A8B9-B802597CDA37}|Clothing_boutique_web.csproj|c:\\users\\admin\\documents\\myproject\\mynewproject\\entityframework_razorpage\\maccuong\\fruit-store\\clothing_boutique_web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAE36A09-8E1C-47F2-A8B9-B802597CDA37}|Clothing_boutique_web.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAE36A09-8E1C-47F2-A8B9-B802597CDA37}|Clothing_boutique_web.csproj|c:\\users\\admin\\documents\\myproject\\mynewproject\\entityframework_razorpage\\maccuong\\fruit-store\\clothing_boutique_web\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BAE36A09-8E1C-47F2-A8B9-B802597CDA37}|Clothing_boutique_web.csproj|solutionrelative:_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAE36A09-8E1C-47F2-A8B9-B802597CDA37}|Clothing_boutique_web.csproj|c:\\users\\admin\\documents\\myproject\\mynewproject\\entityframework_razorpage\\maccuong\\fruit-store\\clothing_boutique_web\\areas\\admin\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAE36A09-8E1C-47F2-A8B9-B802597CDA37}|Clothing_boutique_web.csproj|solutionrelative:areas\\admin\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAE36A09-8E1C-47F2-A8B9-B802597CDA37}|Clothing_boutique_web.csproj|c:\\users\\admin\\documents\\myproject\\mynewproject\\entityframework_razorpage\\maccuong\\fruit-store\\clothing_boutique_web\\areas\\admin\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAE36A09-8E1C-47F2-A8B9-B802597CDA37}|Clothing_boutique_web.csproj|solutionrelative:areas\\admin\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAE36A09-8E1C-47F2-A8B9-B802597CDA37}|Clothing_boutique_web.csproj|c:\\users\\admin\\documents\\myproject\\mynewproject\\entityframework_razorpage\\maccuong\\fruit-store\\clothing_boutique_web\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAE36A09-8E1C-47F2-A8B9-B802597CDA37}|Clothing_boutique_web.csproj|solutionrelative:areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BAE36A09-8E1C-47F2-A8B9-B802597CDA37}|Clothing_boutique_web.csproj|c:\\users\\admin\\documents\\myproject\\mynewproject\\entityframework_razorpage\\maccuong\\fruit-store\\clothing_boutique_web\\areas\\admin\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BAE36A09-8E1C-47F2-A8B9-B802597CDA37}|Clothing_boutique_web.csproj|solutionrelative:areas\\admin\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAE36A09-8E1C-47F2-A8B9-B802597CDA37}|Clothing_boutique_web.csproj|c:\\users\\admin\\documents\\myproject\\mynewproject\\entityframework_razorpage\\maccuong\\fruit-store\\clothing_boutique_web\\areas\\admin\\models\\roleaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAE36A09-8E1C-47F2-A8B9-B802597CDA37}|Clothing_boutique_web.csproj|solutionrelative:areas\\admin\\models\\roleaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAE36A09-8E1C-47F2-A8B9-B802597CDA37}|Clothing_boutique_web.csproj|c:\\users\\admin\\documents\\myproject\\mynewproject\\entityframework_razorpage\\maccuong\\fruit-store\\clothing_boutique_web\\areas\\admin\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAE36A09-8E1C-47F2-A8B9-B802597CDA37}|Clothing_boutique_web.csproj|solutionrelative:areas\\admin\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAE36A09-8E1C-47F2-A8B9-B802597CDA37}|Clothing_boutique_web.csproj|c:\\users\\admin\\documents\\myproject\\mynewproject\\entityframework_razorpage\\maccuong\\fruit-store\\clothing_boutique_web\\areas\\admin\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAE36A09-8E1C-47F2-A8B9-B802597CDA37}|Clothing_boutique_web.csproj|solutionrelative:areas\\admin\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAE36A09-8E1C-47F2-A8B9-B802597CDA37}|Clothing_boutique_web.csproj|c:\\users\\admin\\documents\\myproject\\mynewproject\\entityframework_razorpage\\maccuong\\fruit-store\\clothing_boutique_web\\areas\\admin\\models\\photo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAE36A09-8E1C-47F2-A8B9-B802597CDA37}|Clothing_boutique_web.csproj|solutionrelative:areas\\admin\\models\\photo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAE36A09-8E1C-47F2-A8B9-B802597CDA37}|Clothing_boutique_web.csproj|c:\\users\\admin\\documents\\myproject\\mynewproject\\entityframework_razorpage\\maccuong\\fruit-store\\clothing_boutique_web\\areas\\admin\\views\\photo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BAE36A09-8E1C-47F2-A8B9-B802597CDA37}|Clothing_boutique_web.csproj|solutionrelative:areas\\admin\\views\\photo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAE36A09-8E1C-47F2-A8B9-B802597CDA37}|Clothing_boutique_web.csproj|c:\\users\\admin\\documents\\myproject\\mynewproject\\entityframework_razorpage\\maccuong\\fruit-store\\clothing_boutique_web\\areas\\admin\\views\\product\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BAE36A09-8E1C-47F2-A8B9-B802597CDA37}|Clothing_boutique_web.csproj|solutionrelative:areas\\admin\\views\\product\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BAE36A09-8E1C-47F2-A8B9-B802597CDA37}|Clothing_boutique_web.csproj|c:\\users\\admin\\documents\\myproject\\mynewproject\\entityframework_razorpage\\maccuong\\fruit-store\\clothing_boutique_web\\areas\\admin\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -46,17 +86,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 160,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "_AdminLayout.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\myproject\\mynewproject\\EntityFramework_RAZORPAGE\\maccuong\\Fruit-store\\Clothing_boutique_web\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
               "ToolTip": "C:\\Users\\Admin\\Documents\\myproject\\mynewproject\\EntityFramework_RAZORPAGE\\maccuong\\Fruit-store\\Clothing_boutique_web\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
-              "ViewState": "AQIAADoBAAAAAAAAAIAwwEMBAAApAAAA",
+              "ViewState": "AQIAABACAAAAAAAAAAAAACAAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-08-03T15:19:28.922Z",
               "IsPinned": true,
@@ -76,19 +116,189 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\myproject\\mynewproject\\EntityFramework_RAZORPAGE\\maccuong\\Fruit-store\\Clothing_boutique_web\\Areas\\Admin\\Views\\Account\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Account\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\myproject\\mynewproject\\EntityFramework_RAZORPAGE\\maccuong\\Fruit-store\\Clothing_boutique_web\\Areas\\Admin\\Views\\Account\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Account\\Index.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-19T11:21:28.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\myproject\\mynewproject\\EntityFramework_RAZORPAGE\\maccuong\\Fruit-store\\Clothing_boutique_web\\Areas\\Admin\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\myproject\\mynewproject\\EntityFramework_RAZORPAGE\\maccuong\\Fruit-store\\Clothing_boutique_web\\Areas\\Admin\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAawBkAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T02:49:58.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\myproject\\mynewproject\\EntityFramework_RAZORPAGE\\maccuong\\Fruit-store\\Clothing_boutique_web\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\myproject\\mynewproject\\EntityFramework_RAZORPAGE\\maccuong\\Fruit-store\\Clothing_boutique_web\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAADEAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T10:06:54.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Account.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\myproject\\mynewproject\\EntityFramework_RAZORPAGE\\maccuong\\Fruit-store\\Clothing_boutique_web\\Areas\\Admin\\Models\\Account.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Models\\Account.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\myproject\\mynewproject\\EntityFramework_RAZORPAGE\\maccuong\\Fruit-store\\Clothing_boutique_web\\Areas\\Admin\\Models\\Account.cs",
+              "RelativeToolTip": "Areas\\Admin\\Models\\Account.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T09:49:11.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "DashBoardController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\myproject\\mynewproject\\EntityFramework_RAZORPAGE\\maccuong\\Fruit-store\\Clothing_boutique_web\\Areas\\Admin\\Controllers\\DashBoardController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\DashBoardController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\myproject\\mynewproject\\EntityFramework_RAZORPAGE\\maccuong\\Fruit-store\\Clothing_boutique_web\\Areas\\Admin\\Controllers\\DashBoardController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\DashBoardController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T02:22:51.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\myproject\\mynewproject\\EntityFramework_RAZORPAGE\\maccuong\\Fruit-store\\Clothing_boutique_web\\Areas\\Admin\\Views\\DashBoard\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\DashBoard\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\myproject\\mynewproject\\EntityFramework_RAZORPAGE\\maccuong\\Fruit-store\\Clothing_boutique_web\\Areas\\Admin\\Views\\DashBoard\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\DashBoard\\Index.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABkAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-19T10:55:10.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PhotoController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\myproject\\mynewproject\\EntityFramework_RAZORPAGE\\maccuong\\Fruit-store\\Clothing_boutique_web\\Areas\\Admin\\Controllers\\PhotoController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\PhotoController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\myproject\\mynewproject\\EntityFramework_RAZORPAGE\\maccuong\\Fruit-store\\Clothing_boutique_web\\Areas\\Admin\\Controllers\\PhotoController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\PhotoController.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwJcAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T05:13:47.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\myproject\\mynewproject\\EntityFramework_RAZORPAGE\\maccuong\\Fruit-store\\Clothing_boutique_web\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\myproject\\mynewproject\\EntityFramework_RAZORPAGE\\maccuong\\Fruit-store\\Clothing_boutique_web\\_ViewImports.cshtml",
+              "RelativeToolTip": "_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-19T10:22:43.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RoleAccount.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\myproject\\mynewproject\\EntityFramework_RAZORPAGE\\maccuong\\Fruit-store\\Clothing_boutique_web\\Areas\\Admin\\Models\\RoleAccount.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Models\\RoleAccount.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\myproject\\mynewproject\\EntityFramework_RAZORPAGE\\maccuong\\Fruit-store\\Clothing_boutique_web\\Areas\\Admin\\Models\\RoleAccount.cs",
+              "RelativeToolTip": "Areas\\Admin\\Models\\RoleAccount.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T09:49:37.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\myproject\\mynewproject\\EntityFramework_RAZORPAGE\\maccuong\\Fruit-store\\Clothing_boutique_web\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\myproject\\mynewproject\\EntityFramework_RAZORPAGE\\maccuong\\Fruit-store\\Clothing_boutique_web\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAkwB0AAABkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-11T14:56:28.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\myproject\\mynewproject\\EntityFramework_RAZORPAGE\\maccuong\\Fruit-store\\Clothing_boutique_web\\Areas\\Admin\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\myproject\\mynewproject\\EntityFramework_RAZORPAGE\\maccuong\\Fruit-store\\Clothing_boutique_web\\Areas\\Admin\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\LoginController.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAQwCgAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T03:17:43.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\myproject\\mynewproject\\EntityFramework_RAZORPAGE\\maccuong\\Fruit-store\\Clothing_boutique_web\\Areas\\Admin\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Models\\Category.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\myproject\\mynewproject\\EntityFramework_RAZORPAGE\\maccuong\\Fruit-store\\Clothing_boutique_web\\Areas\\Admin\\Models\\Category.cs",
+              "RelativeToolTip": "Areas\\Admin\\Models\\Category.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T09:49:14.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\myproject\\mynewproject\\EntityFramework_RAZORPAGE\\maccuong\\Fruit-store\\Clothing_boutique_web\\Areas\\Admin\\Models\\Role.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Models\\Role.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\myproject\\mynewproject\\EntityFramework_RAZORPAGE\\maccuong\\Fruit-store\\Clothing_boutique_web\\Areas\\Admin\\Models\\Role.cs",
+              "RelativeToolTip": "Areas\\Admin\\Models\\Role.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBJwAYAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T16:02:41.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "CategoriesController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\myproject\\mynewproject\\EntityFramework_RAZORPAGE\\maccuong\\Fruit-store\\Clothing_boutique_web\\Areas\\Admin\\Controllers\\CategoriesController.cs",
               "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\CategoriesController.cs",
               "ToolTip": "C:\\Users\\Admin\\Documents\\myproject\\mynewproject\\EntityFramework_RAZORPAGE\\maccuong\\Fruit-store\\Clothing_boutique_web\\Areas\\Admin\\Controllers\\CategoriesController.cs",
               "RelativeToolTip": "Areas\\Admin\\Controllers\\CategoriesController.cs",
-              "ViewState": "AQIAAEsAAAAAAAAAAAAQwE4AAAAAAAAA",
+              "ViewState": "AQIAABYAAAAAAAAAAAAmwE4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-11T14:57:24.513Z"
+              "WhenOpened": "2024-08-11T14:57:24.513Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 17,
               "Title": "Add.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\myproject\\mynewproject\\EntityFramework_RAZORPAGE\\maccuong\\Fruit-store\\Clothing_boutique_web\\Areas\\Admin\\Views\\Product\\Add.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Product\\Add.cshtml",
@@ -96,59 +306,25 @@
               "RelativeToolTip": "Areas\\Admin\\Views\\Product\\Add.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-11T16:20:17.914Z"
+              "WhenOpened": "2024-08-11T16:20:17.914Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\myproject\\mynewproject\\EntityFramework_RAZORPAGE\\maccuong\\Fruit-store\\Clothing_boutique_web\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\ProductController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\myproject\\mynewproject\\EntityFramework_RAZORPAGE\\maccuong\\Fruit-store\\Clothing_boutique_web\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "Areas\\Admin\\Controllers\\ProductController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAEMAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-11T14:56:28.956Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Role.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\myproject\\mynewproject\\EntityFramework_RAZORPAGE\\maccuong\\Fruit-store\\Clothing_boutique_web\\Areas\\Admin\\Models\\Role.cs",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Models\\Role.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\myproject\\mynewproject\\EntityFramework_RAZORPAGE\\maccuong\\Fruit-store\\Clothing_boutique_web\\Areas\\Admin\\Models\\Role.cs",
-              "RelativeToolTip": "Areas\\Admin\\Models\\Role.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAgAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T16:02:41.807Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PhotoController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\myproject\\mynewproject\\EntityFramework_RAZORPAGE\\maccuong\\Fruit-store\\Clothing_boutique_web\\Areas\\Admin\\Controllers\\PhotoController.cs",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\PhotoController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\myproject\\mynewproject\\EntityFramework_RAZORPAGE\\maccuong\\Fruit-store\\Clothing_boutique_web\\Areas\\Admin\\Controllers\\PhotoController.cs",
-              "RelativeToolTip": "Areas\\Admin\\Controllers\\PhotoController.cs",
-              "ViewState": "AQIAAIsAAAAAAAAAAADwv5cAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-05T05:13:47.106Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 15,
               "Title": "Photo.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\myproject\\mynewproject\\EntityFramework_RAZORPAGE\\maccuong\\Fruit-store\\Clothing_boutique_web\\Areas\\Admin\\Models\\Photo.cs",
               "RelativeDocumentMoniker": "Areas\\Admin\\Models\\Photo.cs",
               "ToolTip": "C:\\Users\\Admin\\Documents\\myproject\\mynewproject\\EntityFramework_RAZORPAGE\\maccuong\\Fruit-store\\Clothing_boutique_web\\Areas\\Admin\\Models\\Photo.cs",
               "RelativeToolTip": "Areas\\Admin\\Models\\Photo.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAQwA8AAAAkAAAA",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAQwA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-11T15:02:54.917Z"
+              "WhenOpened": "2024-08-11T15:02:54.917Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 16,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\myproject\\mynewproject\\EntityFramework_RAZORPAGE\\maccuong\\Fruit-store\\Clothing_boutique_web\\Areas\\Admin\\Views\\Photo\\Index.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Photo\\Index.cshtml",
@@ -156,11 +332,12 @@
               "RelativeToolTip": "Areas\\Admin\\Views\\Photo\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-05T13:28:01.978Z"
+              "WhenOpened": "2024-08-05T13:28:01.978Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 18,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\myproject\\mynewproject\\EntityFramework_RAZORPAGE\\maccuong\\Fruit-store\\Clothing_boutique_web\\Areas\\Admin\\Views\\Categories\\Index.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Categories\\Index.cshtml",
@@ -168,11 +345,8 @@
               "RelativeToolTip": "Areas\\Admin\\Views\\Categories\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-03T15:34:49.542Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "WhenOpened": "2024-08-03T15:34:49.542Z",
+              "EditorCaption": ""
             }
           ]
         },

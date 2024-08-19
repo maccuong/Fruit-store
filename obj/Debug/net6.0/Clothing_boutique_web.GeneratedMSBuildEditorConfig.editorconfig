@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\Users\Admin\Documents\myproject\mynewproject\EntityFramework_RAZORPAGE\maccuong\Fruit-store\Clothing_boutique_web
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Admin/Documents/myproject/mynewproject/EntityFramework_RAZORPAGE/maccuong/Fruit-store/Clothing_boutique_web/Areas/Admin/Views/Account/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWNjb3VudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Admin/Documents/myproject/mynewproject/EntityFramework_RAZORPAGE/maccuong/Fruit-store/Clothing_boutique_web/Areas/Admin/Views/Categories/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcmllc1xBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

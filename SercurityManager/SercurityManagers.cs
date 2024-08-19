@@ -1,4 +1,5 @@
-﻿using Clothing_boutique_web.Models;
+﻿using Clothing_boutique_web.Areas.Admin.Models;
+using Clothing_boutique_web.Models;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using System.Security.Claims;

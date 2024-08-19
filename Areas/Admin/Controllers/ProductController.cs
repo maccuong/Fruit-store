@@ -26,7 +26,7 @@ namespace Clothing_boutique_web.Areas.Admin.Controllers
         {
             int currentPage = id == null ? 1 : id.Value;
             int itemPerPg = 5;  
-            List<Product> productList = context.Products.ToList();
+            List<Product> productList = context.Products.Include(c => c.Categories).AsNoTracking().ToList();
             return View(await Models.PaginatedList<Product>.CreateDummyData(currentPage, productList, itemPerPg));
         }
 

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 #nullable disable
 
-namespace Clothing_boutique_web.Models
+namespace Clothing_boutique_web.Areas.Admin.Models
 {
     public partial class RoleAccount
     {

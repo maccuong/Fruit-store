@@ -1,4 +1,5 @@
-﻿using Clothing_boutique_web.Models;
+﻿using Clothing_boutique_web.Areas.Admin.Models;
+using Clothing_boutique_web.Models;
 using Clothing_boutique_web.SercurityManager;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
@@ -34,7 +35,7 @@ namespace Clothing_boutique_web.Areas.Admin.Controllers
         [Route("process")]
         public IActionResult Process(string userName, string password)
         {
-            var account = ProcessLogin(userName, password);
+            Account account = ProcessLogin(userName, password);
             if (account != null)
             {
                 sercurityManager.SignIn(this.HttpContext, account);

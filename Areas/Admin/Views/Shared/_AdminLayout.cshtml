@@ -1,8 +1,9 @@
 ﻿@using Clothing_boutique_web.Models
 @using Newtonsoft.Json
 @using Microsoft.AspNetCore.Http; 
- @{
+@{
     string UserName = String.Empty;
+    string Avatar = String.Empty;
     var session = Context.Session;
     string key = "current_user";
     Account account = new Account
@@ -21,6 +22,7 @@
         user = account;
     }
     UserName = user.UserName;
+    Avatar = user.ImageAvatar;
 }
 
 <!DOCTYPE html>

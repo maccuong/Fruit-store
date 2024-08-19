@@ -10,9 +10,10 @@ using Microsoft.Extensions.FileSystemGlobbing.Internal;
 using Microsoft.AspNetCore.Builder;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation()
+builder.Services.AddMvc().AddRazorRuntimeCompilation()
     .AddNewtonsoftJson(option =>
                 option.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+builder.Services.AddControllersWithViews();
 var strConnect = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<DatabaseContext>(options => options.UseLazyLoadingProxies().UseSqlServer(strConnect));
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
@@ -32,7 +33,6 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
          option.AccessDeniedPath = "/admin/login/accessdenied";
          option.ExpireTimeSpan = new TimeSpan(0, 60, 0);
      });
-
 var app = builder.Build();
 
 app.UseHttpsRedirection();
@@ -41,6 +41,7 @@ app.UseStaticFiles();
 app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
+
 app.UseSession();
 
 if (app.Environment.IsDevelopment())
@@ -48,5 +49,5 @@ if (app.Environment.IsDevelopment())
     app.UseDeveloperExceptionPage();
 }
 app.MapDefaultControllerRoute();
-
+app.MapControllers();
 await app.RunAsync();

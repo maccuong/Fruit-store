@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel;
 
 #nullable disable
-namespace Clothing_boutique_web.Models
+namespace Clothing_boutique_web.Areas.Admin.Models
 {
     public partial class Account
     {
@@ -20,6 +22,10 @@ namespace Clothing_boutique_web.Models
         public bool Status { get; set; }
         public string Addresss { get; set; }
         public string Phone { get; set; }
+
+        [NotMapped]
+        [DisplayName("Upload Image")]
+        public IFormFile ImageAvatar { get; set; }
 
         public virtual ICollection<RoleAccount> RoleAccounts { get; set; }
     }

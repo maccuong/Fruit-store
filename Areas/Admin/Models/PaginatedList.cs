@@ -21,7 +21,6 @@ namespace Clothing_boutique_web.Areas.Admin.Models
         public static async Task<PaginatedList<T>> CreateDummyData(int page, List<T> items, int itemPerPage)
         {
             int pageSize = itemPerPage;
-            Account account = new Account();
             PagingInfo pagingInfo = new PagingInfo();
             pagingInfo.CurrentPage = page == 0 ? 1 : page;
             pagingInfo.TotalItems =  items.Count();
