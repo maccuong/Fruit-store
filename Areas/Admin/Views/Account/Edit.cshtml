@@ -1,0 +1,68 @@
+﻿@model Clothing_boutique_web.Areas.Admin.Models.Account;
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="box box-primary">
+    <div class="box-header with-border">
+        <h3 class="box-title">Edit account</h3>
+    </div><!-- /.box-header -->
+    <!-- form start -->
+    <form role="form" method="post" asp-area="admin" asp-controller="account" asp-action="edit" enctype="multipart/form-data">
+        <div class="box-body">
+            @if (ViewBag.Error != null)
+            {
+                <div class="form-group">
+                    <span class="text-danger">@ViewBag.Error </span>
+                </div>
+            }
+            <div class="form-group">
+                <label asp-for="UserName">UserName</label>
+                <input type="text" asp-for="UserName" class="form-control" value="@Model.UserName">
+                <span asp-validation-for="UserName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ImageAvatar"></label>
+                <input type="file" id="imageavatar" asp-for="ImageAvatar" accept="image/*">
+                <img decoding="async" id="imagepreview" src="@("~/admin/avatar/"+ @Model.AvatarName)" asp-append-version width="270px" height="270px" />
+                <span asp-validation-for="ImageAvatar" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password">Password</label>
+                <input type="password" asp-for="Password" class="form-control" value="@Model.Password">
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FullName">FullName</label>
+                <input type="text" asp-for="FullName" class="form-control" value="@Model.FullName">
+                <span asp-validation-for="FullName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email">Email</label>
+                <input type="email" asp-for="Email" class="form-control" value="@Model.Email">
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Addresss">Addresss</label>
+                <input type="text" asp-for="Addresss" class="form-control" value="@Model.Addresss">
+                <span asp-validation-for="Addresss" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Phone">Phone</label>
+                <input type="text" asp-for="Phone" class="form-control" value="@Model.Phone">
+            </div>
+            <div class="checkbox">
+                <label asp-for="Status">
+                    <input asp-for="Status" type="checkbox" value="true"> Status
+                </label>
+            </div>
+        </div><!-- /.box-body -->
+
+        <div class="box-footer">
+            <button type="submit" class="btn btn-primary">Edit</button>
+            <button class="btn btn-danger"><a style="color:aliceblue" asp-area="admin" asp-action="index" asp-controller="account">Back to list</a></button>
+        </div>
+    </form>
+</div>

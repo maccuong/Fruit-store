@@ -19,7 +19,6 @@ namespace Clothing_boutique_web.Areas.Admin.Controllers
         public PhotoController(DatabaseContext _context, IWebHostEnvironment _hostEnvironment)
         {
             context = _context;
-            this.hostEnvironment = hostEnvironment;
             hostEnvironment = _hostEnvironment;
         }
 

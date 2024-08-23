@@ -25,6 +25,50 @@ namespace Clothing_boutique_web.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("Clothing_boutique_web.Areas.Admin.Models.Account", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Addresss")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("AvatarName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
+                        .HasMaxLength(250)
+                        .IsUnicode(false)
+                        .HasColumnType("varchar(250)");
+
+                    b.Property<string>("FullName")
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
+
+                    b.Property<string>("Password")
+                        .HasMaxLength(250)
+                        .IsUnicode(false)
+                        .HasColumnType("varchar(250)");
+
+                    b.Property<string>("Phone")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("UserName")
+                        .HasMaxLength(250)
+                        .IsUnicode(false)
+                        .HasColumnType("varchar(250)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Account", (string)null);
+                });
+
             modelBuilder.Entity("Clothing_boutique_web.Areas.Admin.Models.Category", b =>
                 {
                     b.Property<int>("Id")
@@ -113,48 +157,7 @@ namespace Clothing_boutique_web.Migrations
                     b.ToTable("Products");
                 });
 
-            modelBuilder.Entity("Clothing_boutique_web.Models.Account", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Addresss")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Email")
-                        .HasMaxLength(250)
-                        .IsUnicode(false)
-                        .HasColumnType("varchar(250)");
-
-                    b.Property<string>("FullName")
-                        .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
-
-                    b.Property<string>("Password")
-                        .HasMaxLength(250)
-                        .IsUnicode(false)
-                        .HasColumnType("varchar(250)");
-
-                    b.Property<string>("Phone")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("Status")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("UserName")
-                        .HasMaxLength(250)
-                        .IsUnicode(false)
-                        .HasColumnType("varchar(250)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Account", (string)null);
-                });
-
-            modelBuilder.Entity("Clothing_boutique_web.Models.Role", b =>
+            modelBuilder.Entity("Clothing_boutique_web.Areas.Admin.Models.Role", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -175,7 +178,7 @@ namespace Clothing_boutique_web.Migrations
                     b.ToTable("Role", (string)null);
                 });
 
-            modelBuilder.Entity("Clothing_boutique_web.Models.RoleAccount", b =>
+            modelBuilder.Entity("Clothing_boutique_web.Areas.Admin.Models.RoleAccount", b =>
                 {
                     b.Property<int>("RoleId")
                         .HasColumnType("int");
@@ -215,15 +218,15 @@ namespace Clothing_boutique_web.Migrations
                     b.Navigation("Categories");
                 });
 
-            modelBuilder.Entity("Clothing_boutique_web.Models.RoleAccount", b =>
+            modelBuilder.Entity("Clothing_boutique_web.Areas.Admin.Models.RoleAccount", b =>
                 {
-                    b.HasOne("Clothing_boutique_web.Models.Account", "Account")
+                    b.HasOne("Clothing_boutique_web.Areas.Admin.Models.Account", "Account")
                         .WithMany("RoleAccounts")
                         .HasForeignKey("AccountId")
                         .IsRequired()
                         .HasConstraintName("FK_RoleAccount_Account");
 
-                    b.HasOne("Clothing_boutique_web.Models.Role", "Roles")
+                    b.HasOne("Clothing_boutique_web.Areas.Admin.Models.Role", "Roles")
                         .WithMany("RoleAccounts")
                         .HasForeignKey("RoleId")
                         .IsRequired()
@@ -232,6 +235,11 @@ namespace Clothing_boutique_web.Migrations
                     b.Navigation("Account");
 
                     b.Navigation("Roles");
+                });
+
+            modelBuilder.Entity("Clothing_boutique_web.Areas.Admin.Models.Account", b =>
+                {
+                    b.Navigation("RoleAccounts");
                 });
 
             modelBuilder.Entity("Clothing_boutique_web.Areas.Admin.Models.Category", b =>
@@ -244,12 +252,7 @@ namespace Clothing_boutique_web.Migrations
                     b.Navigation("Photos");
                 });
 
-            modelBuilder.Entity("Clothing_boutique_web.Models.Account", b =>
-                {
-                    b.Navigation("RoleAccounts");
-                });
-
-            modelBuilder.Entity("Clothing_boutique_web.Models.Role", b =>
+            modelBuilder.Entity("Clothing_boutique_web.Areas.Admin.Models.Role", b =>
                 {
                     b.Navigation("RoleAccounts");
                 });

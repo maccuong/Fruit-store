@@ -1,0 +1,60 @@
+﻿@model Clothing_boutique_web.Areas.Admin.Models.Account;
+
+@{
+    ViewData["Title"] = "Add";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+<div class="box box-primary">
+    <div class="box-header with-border">
+        <h3 class="box-title">Add new account</h3>
+    </div><!-- /.box-header -->
+    <!-- form start -->
+    <form role="form" method="post" asp-area="admin" asp-controller="account" asp-action="add" enctype="multipart/form-data">
+        <div class="box-body">
+            <div class="form-group">
+                <label asp-for="UserName">UserName</label>
+                <input type="text" asp-for="UserName" class="form-control">
+                <span asp-validation-for="UserName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ImageAvatar"></label>
+                <input type="file" asp-for="ImageAvatar" accept="image/*">
+                <span asp-validation-for="ImageAvatar" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password">Password</label>
+                <input type="password" asp-for="Password" class="form-control">
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FullName">FullName</label>
+                <input type="text" asp-for="FullName" class="form-control">
+                <span asp-validation-for="FullName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email">Email</label>
+                <input type="email" asp-for="Email" class="form-control">
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Addresss">Addresss</label>
+                <input type="text" asp-for="Addresss" class="form-control">
+                <span asp-validation-for="Addresss" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Phone">Phone</label>
+                <input type="text" asp-for="Phone" class="form-control">
+            </div>
+            <div class="checkbox">
+                <label asp-for="Status">
+                    <input asp-for="Status" type="checkbox" value="true"> Status
+                </label>
+            </div>
+        </div><!-- /.box-body -->
+
+        <div class="box-footer">
+            <button type="submit" class="btn btn-primary">Add</button>
+            <button class="btn btn-danger"><a style="color:aliceblue" asp-area="admin" asp-action="index" asp-controller="account">Back to list</a></button>
+        </div>
+    </form>
+</div>

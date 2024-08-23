@@ -331,6 +331,19 @@
           <!-- sidebar menu: : style can be found in sidebar.less -->
           <ul class="sidebar-menu">
             <li class="header">MAIN NAVIGATION</li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-pie-chart"></i>
+                    <span>Managerment account</span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a asp-area="admin" asp-controller="account" asp-action="index"><i class="fa fa-circle-o"></i>List Account</a></li>
+                    <li><a asp-area="admin" asp-controller="account" asp-action="add"><i class="fa fa-circle-o"></i>Add Account</a></li>
+                    <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i> Role</a></li>
+                    <li><a href="pages/charts/inline.html"><i class="fa fa-circle-o"></i> Claim</a></li>
+                </ul>
+            </li>
             <li class="active treeview">
               <a href="#">
                 <i class="fa fa-dashboard"></i> <span>Category</span> <i class="fa fa-angle-left pull-right"></i>
@@ -360,19 +373,7 @@
                 <li><a asp-area="admin" asp-controller="photo" asp-action="add"><i class="fa fa-circle-o"></i> Add new photo</a></li>
               </ul>
             </li>
-            <li class="treeview">
-              <a href="#">
-                <i class="fa fa-pie-chart"></i>
-                <span>Charts</span>
-                <i class="fa fa-angle-left pull-right"></i>
-              </a>
-              <ul class="treeview-menu">
-                <li><a href="pages/charts/chartjs.html"><i class="fa fa-circle-o"></i> ChartJS</a></li>
-                <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a></li>
-                <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>
-                <li><a href="pages/charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>
-              </ul>
-            </li>
+            
             <li class="treeview">
               <a href="#">
                 <i class="fa fa-laptop"></i>
@@ -689,5 +690,6 @@
     <script src="~/admin/dist/js/pages/dashboard.js"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="~/admin/dist/js/demo.js"></script>
+    <script type="text/javascript" language="javascript" src="~/js/previewImage.js"></script>
   </body>
 </html>

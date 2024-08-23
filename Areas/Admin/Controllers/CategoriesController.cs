@@ -46,7 +46,7 @@ namespace Clothing_boutique_web.Areas.Admin.Controllers
             {
                 context.Categories.Add(category);
                 await context.SaveChangesAsync();
-                return RedirectToAction("index", "categories", new { Areas = "Admin" });
+                return RedirectToAction("index", "categories", new { Areas = "Admin"});
             }
             else
             {
