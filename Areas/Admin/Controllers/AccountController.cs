@@ -1,10 +1,14 @@
 ﻿using Clothing_boutique_web.Areas.Admin.Models;
 using Clothing_boutique_web.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace Clothing_boutique_web.Areas.Admin.Controllers
 {
+    [Authorize(Roles = "Admin")]
+    [Area("admin")]
+    [Route("admin/Account")]
     public class AccountController : Controller
     {
         private DatabaseContext context;
