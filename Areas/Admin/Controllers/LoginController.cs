@@ -110,7 +110,8 @@ namespace Clothing_boutique_web.Areas.Admin.Controllers
             Account current_user = new Account
             {
                 Id = account.Id,
-                UserName = account.UserName
+                UserName = account.UserName,
+                AvatarName = account.AvatarName
             };
 
             // doc chuoi luu trong session voi key key_access
@@ -129,6 +130,7 @@ namespace Clothing_boutique_web.Areas.Admin.Controllers
             {
                 Id = lastCurrentInfo.Id,
                 UserName = lastCurrentInfo.UserName,
+                AvatarName = lastCurrentInfo.AvatarName,
             };
 
             string jsonSave = JsonConvert.SerializeObject(user_update);
