@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PageLinkTagHelper")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e0a5f841b967fef0c0d742394a23d2c7888d2585")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3856c560857cd6e7a24c5b2b06f3529e4186af59")]
 [assembly: System.Reflection.AssemblyProductAttribute("PageLinkTagHelper")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PageLinkTagHelper")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

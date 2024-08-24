@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "W01FCKZPgTvnWaxw29udmyWdMMwdge7Xl+C8ekzma2AkYTPIcf3FmvmcC/c/3odpwy5HJkkhma2d7vshz6DQnw==",
+  "dgSpecHash": "UdWRW7Kiq0h8X9OzO1JnXTlbDlCxKLtEAVfTd8jEoBEcF9x9Xzondluzv+9YiwhUlrudtFSLOp8rnMpxAnaOlg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Documents\\myproject\\mynewproject\\EntityFramework_RAZORPAGE\\maccuong\\Fruit-store\\Clothing_boutique_web\\Clothing_boutique_web.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\Documents\\myproject\\mynewproject\\EntityFramework_RAZORPAGE\\maccuong\\Fruit-store\\Account_Feature\\Clothing_boutique_web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
