@@ -9,11 +9,7 @@ namespace Clothing_boutique_web.Areas.Admin.Controllers
 {
     [Authorize(Roles = "Admin")]
     [Area("admin")]
-<<<<<<< HEAD
     [Route("admin/account")]
-=======
-    [Route("admin/Account")]
->>>>>>> main
     public class AccountController : Controller
     {
         private readonly IWebHostEnvironment hostEnvironment;
